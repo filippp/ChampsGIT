@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1" android:background="@android:color/white" tools:context=".MyActivity">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="267dp"
+                  android:layout_gravity="center">
+        <ListView android:layout_width="wrap_content" android:layout_height="match_parent" android:id="@+id/lvTeams"
+                  android:layout_gravity="center" android:headerDividersEnabled="false"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="top">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                      android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/imageView" android:layout_gravity="left|center_vertical"
+                       android:src="@drawable/logo" android:paddingLeft="80dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium" android:text="RANKING"
+                      android:id="@+id/rank" android:layout_gravity="center" android:textColor="#ff000460"
+                      android:paddingTop="5dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                 android:layout_gravity="bottom">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView"
+                   android:layout_gravity="left|center_vertical" android:src="@drawable/ranking_blue"
+                   android:paddingLeft="20dp"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView2"
+                   android:layout_gravity="center" android:src="@drawable/ball_white"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/imageView3"
+                   android:layout_gravity="right|center_vertical" android:src="@drawable/likes_white"
+                   android:paddingRight="20dp"/>
+    </FrameLayout>
+</FrameLayout>
+
